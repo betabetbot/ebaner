@@ -1,0 +1,180 @@
+
+.body {
+   background-color: #101010
+   margin: 0px;
+}
+#root{
+ 
+}
+
+.eventWrapper {
+          position: relative;
+          width: 300px;
+          height: 250px;
+          background-Color: yellow;
+          overflow: hidden;
+        }
+ 
+
+
+
+* {
+          transition-property: top, left;
+          transition: 1s ease-in-out ;
+        }
+        
+.event {
+  background-image: url("https://httpsimage.com/v2/f01955f5-cfd4-475d-969a-ecbb39ff47f2.png");
+  height: 250px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+ 
+
+.start {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+   text-align: center;
+   top: 160px;
+   display:none;
+  z-index: 12;
+}
+.tournament {
+  font-size: 11px;
+  font-family: "Montserrat";
+  color: rgb(10, 10, 10);
+  font-weight: 900;
+  text-transform: uppercase;
+   position: initial;
+  text-align: center;
+  z-index: 12;
+ }
+.name {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgb(10, 10, 10);
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  z-index: 12;
+  padding-top: 100px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.);
+}
+
+.blk {
+  width: 60px;
+  /* height: 50px; */
+  /* background-color: black; */
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 22px;
+  display: table-cell;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 50px;
+  }
+ 
+.t1 {
+  width: 100%;
+  height: 100px;
+  color: #ffdd00;
+  font-family: Arial;
+  font-weight: 800;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.t2 {
+  width: 00px;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial;
+  font-weight: 800;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 2.5vw;
+}
+.odometer {
+  height: 1.5em;
+  width: 100%;
+  padding-top: 1rem;
+  color: #00aeef;
+  text-align: center;
+  display: inline-block;
+  background: #fff;
+  font-size: 4vw;
+  font-weight: 500px;
+}
+.digit {
+  margin: -0.5vw;
+  display: inline-block;
+  height: 1.5em;
+  width: 0.59em;
+  overflow: hidden;
+}
+.digit:first-child {
+  border-left: none;
+}
+.digit-container {
+  line-height: 1.5em;
+}
+.digit-container.digit-thousand {
+  line-height: 1.5em;
+  -webkit-animation: slide 5s infinite ease;
+  animation: slide 5s infinite ease;
+}
+
+.digit-container.digit-hundred {
+  line-height: 1.5em;
+  -webkit-animation: slide 5s infinite ease-out;
+  animation: slide 5s infinite ease-out;
+}
+
+.digit-container.digit-ten {
+  line-height: 1.5em;
+  -webkit-animation: slide 5s infinite ease-in-out;
+  animation: slide 5s infinite ease-in-out;
+}
+
+.digit-container.digit-one {
+  line-height: 1.5em;
+  -webkit-animation: slide 5s infinite linear;
+  animation: slide 5s infinite linear;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateY(-10em);
+  }
+  /* delay between animations by adding extra transform type with the same value as transform for 100% */
+  40% {
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateY(-10em);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
